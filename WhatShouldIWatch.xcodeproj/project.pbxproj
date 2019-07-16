@@ -13,6 +13,14 @@
 		AD0B80F522DE43A50073C88F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD0B80F422DE43A50073C88F /* Assets.xcassets */; };
 		AD0B80F822DE43A50073C88F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD0B80F722DE43A50073C88F /* Preview Assets.xcassets */; };
 		AD0B80FB22DE43A50073C88F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD0B80F922DE43A50073C88F /* LaunchScreen.storyboard */; };
+		AD0B810922DE45FE0073C88F /* MovieDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0B810222DE45FD0073C88F /* MovieDataProvider.swift */; };
+		AD0B810A22DE45FE0073C88F /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = AD0B810322DE45FD0073C88F /* movies.json */; };
+		AD0B810B22DE45FE0073C88F /* MovieDataProvider-2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0B810422DE45FE0073C88F /* MovieDataProvider-2.swift */; };
+		AD0B810C22DE45FE0073C88F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0B810522DE45FE0073C88F /* Constants.swift */; };
+		AD0B810D22DE45FE0073C88F /* MovieRec.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AD0B810622DE45FE0073C88F /* MovieRec.mlmodel */; };
+		AD0B810E22DE45FE0073C88F /* links.json in Resources */ = {isa = PBXBuildFile; fileRef = AD0B810722DE45FE0073C88F /* links.json */; };
+		AD0B810F22DE45FE0073C88F /* libRecommender.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0B810822DE45FE0073C88F /* libRecommender.dylib */; };
+		AD0B811122DE46600073C88F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = AD0B811022DE46600073C88F /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		AD0B80F722DE43A50073C88F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AD0B80FA22DE43A50073C88F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD0B80FC22DE43A50073C88F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD0B810222DE45FD0073C88F /* MovieDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDataProvider.swift; sourceTree = "<group>"; };
+		AD0B810322DE45FD0073C88F /* movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movies.json; sourceTree = "<group>"; };
+		AD0B810422DE45FE0073C88F /* MovieDataProvider-2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MovieDataProvider-2.swift"; sourceTree = "<group>"; };
+		AD0B810522DE45FE0073C88F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AD0B810622DE45FE0073C88F /* MovieRec.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MovieRec.mlmodel; sourceTree = "<group>"; };
+		AD0B810722DE45FE0073C88F /* links.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = links.json; sourceTree = "<group>"; };
+		AD0B810822DE45FE0073C88F /* libRecommender.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libRecommender.dylib; sourceTree = "<group>"; };
+		AD0B811022DE46600073C88F /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD0B810F22DE45FE0073C88F /* libRecommender.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +57,7 @@
 		AD0B80E222DE43A30073C88F = {
 			isa = PBXGroup;
 			children = (
+				AD0B811022DE46600073C88F /* Podfile */,
 				AD0B80ED22DE43A30073C88F /* WhatShouldIWatch */,
 				AD0B80EC22DE43A30073C88F /* Products */,
 			);
@@ -56,6 +74,13 @@
 		AD0B80ED22DE43A30073C88F /* WhatShouldIWatch */ = {
 			isa = PBXGroup;
 			children = (
+				AD0B810822DE45FE0073C88F /* libRecommender.dylib */,
+				AD0B810522DE45FE0073C88F /* Constants.swift */,
+				AD0B810722DE45FE0073C88F /* links.json */,
+				AD0B810422DE45FE0073C88F /* MovieDataProvider-2.swift */,
+				AD0B810222DE45FD0073C88F /* MovieDataProvider.swift */,
+				AD0B810622DE45FE0073C88F /* MovieRec.mlmodel */,
+				AD0B810322DE45FD0073C88F /* movies.json */,
 				AD0B80EE22DE43A30073C88F /* AppDelegate.swift */,
 				AD0B80F022DE43A30073C88F /* SceneDelegate.swift */,
 				AD0B80F222DE43A30073C88F /* ContentView.swift */,
@@ -133,8 +158,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD0B811122DE46600073C88F /* Podfile in Resources */,
+				AD0B810E22DE45FE0073C88F /* links.json in Resources */,
 				AD0B80FB22DE43A50073C88F /* LaunchScreen.storyboard in Resources */,
 				AD0B80F822DE43A50073C88F /* Preview Assets.xcassets in Resources */,
+				AD0B810A22DE45FE0073C88F /* movies.json in Resources */,
 				AD0B80F522DE43A50073C88F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,8 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD0B80EF22DE43A30073C88F /* AppDelegate.swift in Sources */,
+				AD0B810D22DE45FE0073C88F /* MovieRec.mlmodel in Sources */,
 				AD0B80F122DE43A30073C88F /* SceneDelegate.swift in Sources */,
 				AD0B80F322DE43A30073C88F /* ContentView.swift in Sources */,
+				AD0B810922DE45FE0073C88F /* MovieDataProvider.swift in Sources */,
+				AD0B810B22DE45FE0073C88F /* MovieDataProvider-2.swift in Sources */,
+				AD0B810C22DE45FE0073C88F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +325,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WhatShouldIWatch",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.baralabs.WhatShouldIWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -312,6 +348,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WhatShouldIWatch",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.baralabs.WhatShouldIWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
