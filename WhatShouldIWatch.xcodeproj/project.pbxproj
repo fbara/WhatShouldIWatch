@@ -18,11 +18,27 @@
 		AD0B811D22DE49F30073C88F /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = AD0B811622DE49F20073C88F /* movies.json */; };
 		AD0B811E22DE49F30073C88F /* links.json in Resources */ = {isa = PBXBuildFile; fileRef = AD0B811722DE49F20073C88F /* links.json */; };
 		AD0B811F22DE49F30073C88F /* Levenshtein.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0B811822DE49F20073C88F /* Levenshtein.swift */; };
-		AD0B812022DE49F30073C88F /* libRecommender.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0B811922DE49F30073C88F /* libRecommender.dylib */; };
 		AD0B812122DE49F30073C88F /* MovieDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0B811A22DE49F30073C88F /* MovieDataProvider.swift */; };
 		AD0B812222DE49F30073C88F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0B811B22DE49F30073C88F /* Constants.swift */; };
+		AD13AFEE22DF95A600BA6433 /* libRecommender.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AD13AFED22DF95A600BA6433 /* libRecommender.dylib */; };
+		AD13AFEF22DF95C000BA6433 /* libRecommender.dylib in Resources */ = {isa = PBXBuildFile; fileRef = AD13AFED22DF95A600BA6433 /* libRecommender.dylib */; };
+		AD13AFF022DF95DF00BA6433 /* libRecommender.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = AD13AFED22DF95A600BA6433 /* libRecommender.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CB4F4F5ABCA3D5F486D90358 /* Pods_WhatShouldIWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 059C280C5DDF1BD72C4388E8 /* Pods_WhatShouldIWatch.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AD13AFF122DF95DF00BA6433 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AD13AFF022DF95DF00BA6433 /* libRecommender.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		059C280C5DDF1BD72C4388E8 /* Pods_WhatShouldIWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatShouldIWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,9 +57,9 @@
 		AD0B811622DE49F20073C88F /* movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movies.json; sourceTree = "<group>"; };
 		AD0B811722DE49F20073C88F /* links.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = links.json; sourceTree = "<group>"; };
 		AD0B811822DE49F20073C88F /* Levenshtein.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Levenshtein.swift; sourceTree = "<group>"; };
-		AD0B811922DE49F30073C88F /* libRecommender.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libRecommender.dylib; sourceTree = "<group>"; };
 		AD0B811A22DE49F30073C88F /* MovieDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDataProvider.swift; sourceTree = "<group>"; };
 		AD0B811B22DE49F30073C88F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AD13AFED22DF95A600BA6433 /* libRecommender.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libRecommender.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD0B812022DE49F30073C88F /* libRecommender.dylib in Frameworks */,
+				AD13AFEE22DF95A600BA6433 /* libRecommender.dylib in Frameworks */,
 				CB4F4F5ABCA3D5F486D90358 /* Pods_WhatShouldIWatch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,9 +114,9 @@
 		AD0B80ED22DE43A30073C88F /* WhatShouldIWatch */ = {
 			isa = PBXGroup;
 			children = (
+				AD13AFED22DF95A600BA6433 /* libRecommender.dylib */,
 				AD0B811B22DE49F30073C88F /* Constants.swift */,
 				AD0B811822DE49F20073C88F /* Levenshtein.swift */,
-				AD0B811922DE49F30073C88F /* libRecommender.dylib */,
 				AD0B811722DE49F20073C88F /* links.json */,
 				AD0B811A22DE49F30073C88F /* MovieDataProvider.swift */,
 				AD0B811522DE49F10073C88F /* MovieRec.mlmodel */,
@@ -136,6 +152,7 @@
 				AD0B80E822DE43A30073C88F /* Frameworks */,
 				AD0B80E922DE43A30073C88F /* Resources */,
 				B81056D413C2391844EB5C99 /* [CP] Embed Pods Frameworks */,
+				AD13AFF122DF95DF00BA6433 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -184,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD13AFEF22DF95C000BA6433 /* libRecommender.dylib in Resources */,
 				AD0B811122DE46600073C88F /* Podfile in Resources */,
 				AD0B80FB22DE43A50073C88F /* LaunchScreen.storyboard in Resources */,
 				AD0B811D22DE49F30073C88F /* movies.json in Resources */,
